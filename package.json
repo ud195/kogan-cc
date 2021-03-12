@@ -1,0 +1,32 @@
+{
+  "name": "kogan-coding-challenge",
+  "version": "1.0.0",
+  "description": "My submission for the Kogan coding challenge",
+  "main": "./config/server.js",
+  "scripts": {
+    "start": "node ./config/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "sudo rm -rf node_modules"
+  },
+  "keywords": [
+    "expressjs",
+    "nodejs",
+    "handlebars",
+    "css"
+  ],
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Upshay Dumur",
+    "email": "upsdmr@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "node-fetch": "^2.6.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ud195/kogan-cc.git"
+  }
+}

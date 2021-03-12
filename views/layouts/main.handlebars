@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <title>Kogan Coding Challenge</title>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <h1>AIR CONDITIONERS INFORMATION</h1>
+      <div class="tableContainer">
+        <table>
+          <thead class="tableHead">
+            <tr class="tableHead">
+              <th class="tableHead">Title</th>
+              <th class="tableHead">Category</th>
+              <th class="tableHead">Weight</th>
+              <th class="tableHead">Width</th>
+              <th class="tableHead">Length</th>
+              <th class="tableHead">Height</th>
+              <th class="tableHead">Cubic Weight</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each products}}
+              <tr>
+                  <td>{{title}}</td>
+                  <td>{{category}}</td>
+                  <td>{{weight}} g</td>
+                  {{#with size}}
+                  <td>{{width}} cm</td>
+                  <td>{{length}} cm</td>
+                  <td>{{height}} cm</td>
+                  {{/with}}
+                  <td>{{display2Decimal cubicWeight}} kg</td>
+              </tr>
+            {{/each}}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>Average Cubic Weight</td>
+              <td>{{averageCubicWeight}} kg</td>
+            </tr>
+          </tfoot>
+          </table>
+        </div>
+      </div>
+  </body>
+</html>
